@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .third-panel__tab {
+        position: relative;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      .tooltip {
+        display: none;
+        position: absolute;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 3px;
+        white-space: nowrap;
+      }
+
+      .third-panel__tab:hover .tooltip {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="third-panel">
+      <div class="third-panel__tab">
+        Tab 1
+        <div class="tooltip">Tooltip for Tab 1</div>
+      </div>
+      <div class="third-panel__tab">
+        Tab 2
+        <div class="tooltip">Tooltip for Tab 2</div>
+      </div>
+      <div class="third-panel__tab">
+        Tab 3
+        <div class="tooltip">Tooltip for Tab 3</div>
+      </div>
+    </div>
+  </body>
+</html>
